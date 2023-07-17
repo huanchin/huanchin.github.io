@@ -127,6 +127,10 @@ nav ul li {
   animation-fill-mode: forwards;
 }
 
+.active {
+  color: rgb(235, 229, 231);
+}
+
 main {
   padding: 1rem 5rem;
   color: rgba(50, 52, 50, 0.87);
