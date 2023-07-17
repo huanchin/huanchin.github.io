@@ -127,6 +127,21 @@ nav ul li {
   animation-fill-mode: forwards;
 }
 
+main {
+  padding: 1rem 5rem;
+  color: rgba(50, 52, 50, 0.87);
+  background-color: rgba(249, 247, 248, 0.614);
+}
+
+main h1 {
+  padding: 2rem 0rem;
+  font-style: italic;
+}
+
+main p {
+  font-size: 1.1rem;
+}
+
 @keyframes HeaderTitle {
   from {
     left: 30px;
@@ -153,26 +168,23 @@ nav ul li {
     align-items: center;
     justify-content: center;
   }
+  header {
+    width: 100vw;
+    /*height: 55vh;*/
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   #HeaderLeft {
-    padding: 0rem 5rem 0rem 3rem;
+    padding: 0rem 0rem 0rem 0rem;
     width: 70%;
+  }
+  main {
+    padding: 1rem 2rem;
   }
   main h1 {
     text-align: center;
   }
-}
-
-main {
-  padding: 1rem 5rem;
-  color: rgba(50, 52, 50, 0.87);
-  background-color: rgba(249, 247, 248, 0.614);
-}
-
-main h1 {
-  padding: 2rem 0rem;
-  font-style: italic;
-}
-
-main p {
-  font-size: 1.1rem;
 }
