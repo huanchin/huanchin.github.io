@@ -1,21 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "News Cycle", sans-serif;
+}
 
+body {
+  background-color: rgb(235, 229, 231);
+  background-image: url("bg2.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+li {
+  list-style-type: none;
+}
+
+header {
+  width: 100vw;
+  /*height: 55vh;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 3rem 2.5rem 3rem;
+  background-color: rgba(9, 48, 9, 0.662);
+  color: rgb(202, 194, 194);
+}
+
+#selfie {
+  height: auto;
+  width: 100%;
+  padding: 0.5rem;
+  border: solid;
+}
+
+#HeaderLeft {
+  padding: 0rem 5rem 0rem 3rem;
+  width: 27%;
+}
+
+#HeaderRight {
+  /*padding: 3rem 3rem;*/
+  font-size: 1.3rem;
+}
+
+#about {
+  padding: 1rem 0rem;
+}
+
+#contact {
+  padding: 1rem 0rem;
+}
+
+#BorderBottom {
+  margin: 0rem 1rem 0rem 1rem;
+  border-bottom: solid;
+  border-width: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#logo {
+  padding: 0.7rem 0rem 0rem 3rem;
+  height: 40px;
+  width: auto;
+}
+
+#title {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 
 nav {
-	background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(9, 48, 9, 0.662);
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  color: rgb(202, 194, 194);
 }
 
-nav ul{
-	display: flex;
-	list-style-type: none;
+nav h1 {
+  padding: 0.7rem 5rem 0rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(235, 229, 231);
 }
 
-nav ul li a{
-	color: black;
-	text-decoration: none;
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+}
+nav ul li {
+  padding: 1rem 1.5rem 0rem 1.5rem;
+}
+
+.page {
+  color: rgb(202, 194, 194);
+  transition-duration: 0.25s;
+}
+
+.page:hover {
+  color: rgb(235, 229, 231);
+}
+
+.HeaderTitle {
+  position: relative;
+  animation-name: HeaderTitle;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in-out;
+  color: rgb(235, 229, 231);
+  font-style: italic;
+}
+
+.HeaderContent {
+  position: relative;
+  left: 40px;
+  animation-name: HeaderContent;
+  animation-duration: 1.7s;
+  animation-delay: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes HeaderTitle {
+  from {
+    left: 30px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes HeaderContent {
+  from {
+    left: 40px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #BorderBottom {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #HeaderLeft {
+    padding: 0rem 5rem 0rem 3rem;
+    width: 70%;
+  }
+  main h1 {
+    text-align: center;
+  }
+}
+
+main {
+  padding: 1rem 5rem;
+  color: rgba(50, 52, 50, 0.87);
+  background-color: rgba(249, 247, 248, 0.614);
+}
+
+main h1 {
+  padding: 2rem 0rem;
+  font-style: italic;
+}
+
+main p {
+  font-size: 1.1rem;
 }
