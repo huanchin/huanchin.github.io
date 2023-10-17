@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--favicon/page icon-->
+    <link rel="shortcut icon" href="" />
+    <link rel="bookmark" href="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/protfolio.css" />
+    <!--Define keywords for search engines-->
+    <meta name="keywords" content="" />
+    <!--A meta robots tag is HTML code that tells search engine robots how to crawl, index, and display a page’s content.-->
+    <meta name="robots" content="index, follow" />
+    <!--Define a description of your web page-->
+    <meta name="description" content="Welcome to Huan's Web Page." />
+    <!--Define the author of a page-->
+    <meta name="author" content="Huan-Chin Chen" />
+    <!--Refresh document every 30 seconds-->
+    <!--<meta http-equiv="refresh" content="30" />-->
+    <!--<Base> tag specify a default URL and a default target for all links on a page-->
+    <base target="_self" />
+    <title>Huan-Chin | Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Huan-Chin</h1>
+      </div>
+
+      <nav class="sidebar">
+        <ul>
+          <li onclick="closeSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32"
+              viewBox="0 -960 960 960"
+              width="32"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </li>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a class="active" href="#">PORTFOLIO</a></li>
+          <li><a href="">RESUME</a></li>
+        </ul>
+      </nav>
+
+      <nav class="topbar">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a class="active" href="#">PORTFOLIO</a></li>
+          <li><a href="">RESUME</a></li>
+          <li>
+            <svg
+              onclick="showSidebar()"
+              id="navIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="32"
+              viewBox="0 -960 960 960"
+              width="32"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div class="cards row">
+        <div class="card row">
+          <div class="card-body">
+            <div class="title">
+              <h2>Frontend</h2>
+            </div>
+            <p>
+              Frontend Animations with HTML5, CSS3/ SCSS, React and more...
+              <br /><br /><a href="https://codepen.io/Huan-Chin" target="_blank"
+                >view</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card row">
+          <div class="card-body">
+            <div class="title">
+              <h2>JavaScript</h2>
+            </div>
+            <p>
+              Over 30 project in JavaScript (DOM, Hoisting, Scope, Closure and
+              more...)<br /><br /><a href="">view</a>
+            </p>
+          </div>
+        </div>
+        <div class="card row">
+          <div class="card-body">
+            <div class="title">
+              <h2>Backend</h2>
+            </div>
+            <p>
+              Node.js, Express.js, SQL, mySQL, MongoDB and more...<br /><br /><a
+                href=""
+                >view</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card row">
+          <div class="card-body">
+            <div class="title">
+              <h2>Fullstack</h2>
+            </div>
+            <p>
+              Social Media, E-commerce, Chat APP and more...<br /><br /><a
+                href=""
+                >view</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
