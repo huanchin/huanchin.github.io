@@ -9,7 +9,7 @@
 }
 
 body {
-  height: 100vh;
+  //height: 100vh;
   min-height: 100vh;
   background-image: url("../bg.jpg");
   background-size: cover;
@@ -208,7 +208,10 @@ main {
       flex-direction: column;
       margin: 0em 0em;
       section.right-bottom {
-        margin: 2em 2em;
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-bottom: 5em;
       }
       img {
         margin: 0em 5em;
