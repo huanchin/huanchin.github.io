@@ -164,16 +164,6 @@ header {
         /* background: linear-gradient(180deg, rgba(45, 45, 45, 0) 0%, #2d2d2d 100%); */
         padding: 2em;
 
-        // .title {
-        //     background: linear-gradient(
-        //       180deg,
-        //       rgba(45, 45, 45, 0) 0%,
-        //       #2d2d2d 100%
-        //     );
-        //     position: absolute;
-        //     inset: 0;
-        // }
-
         h2 {
           font-size: clamp(38px, 5vw, 48px);
           color: #fffbfb;
@@ -255,23 +245,13 @@ header {
         align-items: center;
         .card-body {
           padding: 1rem;
-          //   .title {
-          //     background: linear-gradient(
-          //       180deg,
-          //       rgba(45, 45, 45, 0) 0%,
-          //       #2d2d2d 100%
-          //     );
-          //     position: absolute;
-          //     inset: 0;
-          //     transition: all 0.5s ease-in-out;
-          //   }
           h2 {
             font-size: clamp(38px, 5vw, 48px);
             color: #fffbfb;
             text-transform: uppercase;
             white-space: nowrap;
             margin: 0;
-            transform: rotate(0deg) translateY(0rem);
+            transform: none;
           }
         }
       }

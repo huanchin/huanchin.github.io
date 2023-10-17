@@ -219,7 +219,7 @@ header nav.topbar ul li svg {
     text-transform: uppercase;
     white-space: nowrap;
     margin: 0;
-    transform: rotate(0deg) translateY(0rem);
+    transform: none;
   }
   .container .cards .card:hover,
   .container .cards .card:active {
