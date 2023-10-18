@@ -11,7 +11,7 @@
 body {
   height: 100vh;
   min-height: 100vh;
-  background-image: url("../bg.jpg");
+  background-image: url("../images/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -136,7 +136,7 @@ header nav.topbar ul li svg {
   color: white;
   overflow: hidden;
   cursor: pointer;
-  background-image: url(../card.jpg);
+  background-image: url(../images/card.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,13 +173,13 @@ header nav.topbar ul li svg {
   padding: 0.5rem 1rem;
 }
 .container .cards .card:nth-of-type(2) {
-  background-image: url(../card2.jpg);
+  background-image: url(../images/card2.jpg);
 }
 .container .cards .card:nth-of-type(3) {
-  background-image: url(../card3.jpg);
+  background-image: url(../images/card3.jpg);
 }
 .container .cards .card:nth-of-type(4) {
-  background-image: url(../card4.jpg);
+  background-image: url(../images/card4.jpg);
 }
 .container .cards .card:hover {
   max-width: 400px;
