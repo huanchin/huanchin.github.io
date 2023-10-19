@@ -32,6 +32,18 @@ p {
   background-position: center;
 }
 
+#item3 {
+  background: url(../images/snake.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#item5 {
+  background: url(../images/cssvariables.png);
+  background-size: cover;
+  background-position: center;
+}
+
 /* grid item hover effect */
 .grid-item {
   position: relative;
@@ -50,6 +62,7 @@ p {
     transition: 0.3s;
     h1.title {
       padding: 0.6em 0em;
+      text-align: center;
     }
     a.view {
       border: 2px #fff solid;
@@ -98,12 +111,23 @@ header {
 }
 
 @media screen and (max-width: 900px) {
+  p {
+    font-size: 1.3em;
+  }
   .grid-container {
     grid-auto-rows: 25vw;
   }
 }
 
 @media screen and (max-width: 620px) {
+  header {
+    svg {
+      margin: 0em 1em;
+    }
+  }
+  p {
+    font-size: 1em;
+  }
   .grid-container {
     grid-auto-rows: 50vw;
   }
