@@ -129,9 +129,9 @@ header nav.topbar ul li svg {
 .container .cards .card {
   align-items: flex-end;
   justify-content: center;
-  min-width: 150px;
-  max-width: 150px;
-  min-height: 500px;
+  min-width: 10vw;
+  max-width: 10vw;
+  min-height: 60vh;
   text-align: center;
   color: white;
   overflow: hidden;
@@ -182,7 +182,7 @@ header nav.topbar ul li svg {
   background-image: url(../images/card4.jpg);
 }
 .container .cards .card:hover {
-  max-width: 400px;
+  max-width: 25vw;
 }
 .container .cards .card:hover .title {
   all: unset;
