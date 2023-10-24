@@ -38,8 +38,20 @@ p {
   background-position: center;
 }
 
+#item4 {
+  background: url(../images/dice.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 #item5 {
-  background: url(../images/cssvariables.png);
+  background: url(../images/mole.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#item6 {
+  background: url(../images/map.png);
   background-size: cover;
   background-position: center;
 }
