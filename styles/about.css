@@ -114,12 +114,13 @@ header nav.topbar ul li svg {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 main p {
   text-shadow: 0.4px 1.2px 0.2px rgb(177, 177, 177);
 }
 main section.about-left {
-  margin: 5em 2em;
+  margin: 5em 0em;
   width: 55%;
   animation: slideDown 1s ease;
 }

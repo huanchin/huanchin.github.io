@@ -126,14 +126,16 @@ header {
 }
 
 //navbar style end
+
 main {
   p {
     text-shadow: 0.4px 1.2px 0.2px rgb(177, 177, 177);
   }
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   section.about-left {
-    margin: 5em 2em;
+    margin: 5em 0em;
     width: 55%;
     animation: slideDown 1s ease;
     h1 {
@@ -150,10 +152,13 @@ main {
       img {
         width: 200px;
         border-radius: 50%;
-        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-          0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+        box-shadow:
+          0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+          0 12.5px 10px rgba(0, 0, 0, 0.06),
           0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-          0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+          0 100px 80px rgba(0, 0, 0, 0.12);
         animation: scaleUp 1s ease;
       }
     }
