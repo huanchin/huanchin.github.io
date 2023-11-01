@@ -9,7 +9,7 @@
 }
 
 body {
-  height: 100vh;
+  //height: 100vh;
   min-height: 100vh;
   background-image: url("../images/bg.jpg");
   background-size: cover;
@@ -127,38 +127,37 @@ header {
 
 //navbar style end
 
-//HOME: main body style
+///////////////////HOME: main body style/////////////////
 
-main {
+.top {
   display: flex;
-  //   border: 1px solid;
+  justify-content: space-around;
+  //border: 1px solid;
   section.left {
-    // border: 1px solid;
+    //border: 1px solid;
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 400px;
+    width: 38vw;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
 
     img {
       //   border: 1px solid;
-      width: 250px;
+      width: 11vw;
+      min-width: 200px;
       animation: scaleUp 1s ease;
-      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
         0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-        0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
     }
   }
   section.right {
-    flex-grow: 7;
-    flex-shrink: 2;
-    flex-basis: 400px;
+    width: 62vw;
     animation: slideDown 1s ease;
-    // border: 1px solid;
-    padding: 5rem 1rem;
+    padding: 3rem 1rem 2rem 1rem;
     p {
       padding: 0rem 0rem 1rem 0rem;
       font-size: 1.2rem;
@@ -170,24 +169,70 @@ main {
   }
 }
 
-@media screen and (max-width: 950px) {
-  main {
+.bottom {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  section.bottom-left {
+    animation: slideDown 1s ease;
+    width: 38vw;
+    padding: 3rem 1rem 5rem 3rem;
+    h1 {
+      margin: 1rem 0rem;
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  section.bottom-right {
+    animation: slideDown 1s ease;
+    width: 62vw;
+    padding: 2rem 2rem 2rem 1rem;
+    h1 {
+      margin: 1rem 0rem;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .top {
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     section.left {
+      width: 100%;
       padding-top: 2rem;
       img {
         width: 230px;
       }
     }
     section.right {
+      width: 100%;
       padding-top: 3rem;
+      padding-left: 2.5rem;
+    }
+  }
+  .bottom {
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    section.bottom-left {
+      width: 100%;
+      padding: 0rem 8rem 1.5rem 8rem;
+    }
+    section.bottom-right {
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 100%;
+      padding: 2rem;
     }
   }
 }
 
-@media screen and (max-width: 500px) {
-  main {
+@media screen and (max-width: 750px) {
+  .top {
     section.left {
       padding-top: 1rem;
       flex-basis: 250px;
@@ -197,7 +242,7 @@ main {
       }
     }
     section.right {
-      padding-top: 0rem;
+      padding: 3rem 1rem 1rem 1rem;
       flex-basis: 250px;
       p {
         font-size: 0.85rem;
@@ -207,6 +252,24 @@ main {
           width: 28;
           height: 28;
         }
+      }
+    }
+  }
+  .bottom {
+    section.bottom-left {
+      padding: 0rem 1rem 1.5rem 1rem;
+      h3 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.85rem;
+      }
+    }
+    section.bottom-right {
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 0rem 1rem 3rem 1rem;
+      p {
+        font-size: 0.85rem;
       }
     }
   }
