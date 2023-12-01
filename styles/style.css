@@ -111,6 +111,10 @@ header nav.topbar ul li svg {
     display: block;
   }
 }
+.lazy-img {
+  filter: blur(5px);
+}
+
 .top {
   display: flex;
   justify-content: space-around;

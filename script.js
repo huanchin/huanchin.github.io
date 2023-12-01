@@ -21,3 +21,16 @@ window.addEventListener("scroll", () => {
     header.style.backdropFilter = "";
   }
 });
+
+// lazy loading img
+const imgTarget = document.querySelector("img[data-src]");
+// console.log(imgTarget);
+// console.log(imgTarget.src);
+// console.log(imgTarget.dataset.src);
+imgTarget.src = imgTarget.dataset.src;
+// console.log(imgTarget.src);
+
+imgTarget.addEventListener("load", function () {
+  // console.log(imgTarget.classList);
+  imgTarget.classList.remove("lazy-img");
+});
