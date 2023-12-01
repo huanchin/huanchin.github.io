@@ -134,15 +134,15 @@ header {
 
 .top {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   //border: 1px solid;
   section.left {
     //border: 1px solid;
     display: flex;
-    width: 38vw;
-    justify-content: center;
+    width: 30vw;
+    justify-content: end;
     align-items: center;
-
+    padding-right: 5vw;
     img {
       //   border: 1px solid;
       width: 11vw;
@@ -160,7 +160,7 @@ header {
   section.right {
     width: 62vw;
     animation: slideDown 1s ease;
-    padding: 3rem 1rem 2rem 1rem;
+    padding: 3rem 1rem 5rem 1rem;
     p {
       padding: 0rem 0rem 1rem 0rem;
       font-size: 1.2rem;
@@ -280,7 +280,7 @@ header {
 
 @keyframes scaleUp {
   from {
-    transform: scale(0.5);
+    transform: scale(0.8);
   }
   to {
     transform: scale(1);

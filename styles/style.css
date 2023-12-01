@@ -117,13 +117,14 @@ header nav.topbar ul li svg {
 
 .top {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .top section.left {
   display: flex;
-  width: 38vw;
-  justify-content: center;
+  width: 30vw;
+  justify-content: end;
   align-items: center;
+  padding-right: 5vw;
 }
 .top section.left img {
   width: 11vw;
@@ -134,7 +135,7 @@ header nav.topbar ul li svg {
 .top section.right {
   width: 62vw;
   animation: slideDown 1s ease;
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 3rem 1rem 5rem 1rem;
 }
 .top section.right p {
   padding: 0rem 0rem 1rem 0rem;
@@ -245,7 +246,7 @@ header nav.topbar ul li svg {
 }
 @keyframes scaleUp {
   from {
-    transform: scale(0.5);
+    transform: scale(0.8);
   }
   to {
     transform: scale(1);
