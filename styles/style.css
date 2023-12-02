@@ -183,6 +183,7 @@ header nav.topbar ul li svg {
   .top section.left {
     width: 100%;
     padding-top: 2rem;
+    justify-content: center;
   }
   .top section.left img {
     width: 230px;
@@ -212,6 +213,7 @@ header nav.topbar ul li svg {
     padding-top: 1rem;
     flex-basis: 250px;
     align-items: flex-start;
+    justify-content: center;
   }
   .top section.left img {
     width: 150px;

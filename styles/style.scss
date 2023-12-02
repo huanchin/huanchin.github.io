@@ -208,6 +208,7 @@ header {
     section.left {
       width: 100%;
       padding-top: 2rem;
+      justify-content: center;
       img {
         width: 230px;
       }
@@ -240,6 +241,7 @@ header {
       padding-top: 1rem;
       flex-basis: 250px;
       align-items: flex-start;
+      justify-content: center;
       img {
         width: 150px;
       }
