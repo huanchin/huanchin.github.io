@@ -33,7 +33,7 @@ p {
 }
 
 #item3 {
-  background: url(../images/snake.png);
+  background: url(../images/snake.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -52,6 +52,18 @@ p {
 
 #item6 {
   background: url(../images/map.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#item7 {
+  background: url(../images/bankist-2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#item8 {
+  background: url(../images/bankistapp.png);
   background-size: cover;
   background-position: center;
 }
