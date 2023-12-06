@@ -172,36 +172,32 @@ header {
   }
 }
 
-.bottom {
+.section_skill {
+  //border: 1px solid black;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.5);
-  section.bottom-left {
-    animation: slideDown 1s ease;
-    width: 38vw;
-    padding: 3rem 1rem 5rem 3rem;
-    h1 {
-      margin: 1rem 0rem;
-      text-align: center;
-    }
-    h3 {
-      text-align: center;
-    }
-    p {
-      text-align: center;
-    }
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  div.skill {
+    //border: 1px solid black;
+    margin: 3rem 1.5rem;
   }
-  section.bottom-right {
-    animation: slideDown 1s ease;
-    width: 62vw;
-    padding: 2rem 2rem 2rem 1rem;
-    h1 {
-      margin: 1rem 0rem;
-      text-align: center;
+  div.skill_logo {
+    //border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      margin: 0.5rem;
     }
   }
 }
 
-@media screen and (max-width: 1000px) {
+.section_about {
+  margin: 5rem 7rem;
+}
+
+@media screen and (max-width: 1100px) {
   .top {
     flex-direction: column;
     width: 100%;
@@ -219,19 +215,9 @@ header {
       padding-left: 2.5rem;
     }
   }
-  .bottom {
+
+  .section_skill {
     flex-direction: column;
-    background-color: transparent;
-    width: 100%;
-    section.bottom-left {
-      width: 100%;
-      padding: 0rem 8rem 1.5rem 8rem;
-    }
-    section.bottom-right {
-      background-color: rgba(255, 255, 255, 0.5);
-      width: 100%;
-      padding: 2rem;
-    }
   }
 }
 
@@ -260,23 +246,33 @@ header {
       }
     }
   }
-  .bottom {
-    section.bottom-left {
-      padding: 0rem 1rem 1.5rem 1rem;
-      h3 {
-        font-size: 1rem;
-      }
-      p {
-        font-size: 0.85rem;
+  .section_skill {
+    p {
+      font-size: 0.85rem;
+    }
+  }
+  .section_about {
+    margin: 5rem 4rem;
+    p {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .section_skill {
+    .skill_logo {
+      .back_logo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
       }
     }
-    section.bottom-right {
-      background-color: rgba(255, 255, 255, 0.5);
-      padding: 0rem 1rem 3rem 1rem;
-      p {
-        font-size: 0.85rem;
-      }
-    }
+  }
+  .section_about {
+    margin: 5rem 2rem;
   }
 }
 

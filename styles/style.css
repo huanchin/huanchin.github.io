@@ -146,36 +146,29 @@ header nav.topbar ul li svg {
   font-weight: bold;
 }
 
-.bottom {
+.section_skill {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.5);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-.bottom section.bottom-left {
-  animation: slideDown 1s ease;
-  width: 38vw;
-  padding: 3rem 1rem 5rem 3rem;
+.section_skill div.skill {
+  margin: 3rem 1.5rem;
 }
-.bottom section.bottom-left h1 {
-  margin: 1rem 0rem;
-  text-align: center;
+.section_skill div.skill_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.bottom section.bottom-left h3 {
-  text-align: center;
-}
-.bottom section.bottom-left p {
-  text-align: center;
-}
-.bottom section.bottom-right {
-  animation: slideDown 1s ease;
-  width: 62vw;
-  padding: 2rem 2rem 2rem 1rem;
-}
-.bottom section.bottom-right h1 {
-  margin: 1rem 0rem;
-  text-align: center;
+.section_skill div.skill_logo img {
+  margin: 0.5rem;
 }
 
-@media screen and (max-width: 1000px) {
+.section_about {
+  margin: 5rem 7rem;
+}
+
+@media screen and (max-width: 1100px) {
   .top {
     flex-direction: column;
     width: 100%;
@@ -193,19 +186,8 @@ header nav.topbar ul li svg {
     padding-top: 3rem;
     padding-left: 2.5rem;
   }
-  .bottom {
+  .section_skill {
     flex-direction: column;
-    background-color: transparent;
-    width: 100%;
-  }
-  .bottom section.bottom-left {
-    width: 100%;
-    padding: 0rem 8rem 1.5rem 8rem;
-  }
-  .bottom section.bottom-right {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
-    padding: 2rem;
   }
 }
 @media screen and (max-width: 750px) {
@@ -229,21 +211,26 @@ header nav.topbar ul li svg {
     width: 28;
     height: 28;
   }
-  .bottom section.bottom-left {
-    padding: 0rem 1rem 1.5rem 1rem;
-  }
-  .bottom section.bottom-left h3 {
-    font-size: 1rem;
-  }
-  .bottom section.bottom-left p {
+  .section_skill p {
     font-size: 0.85rem;
   }
-  .bottom section.bottom-right {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 0rem 1rem 3rem 1rem;
+  .section_about {
+    margin: 5rem 4rem;
   }
-  .bottom section.bottom-right p {
+  .section_about p {
     font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .section_skill .skill_logo .back_logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .section_about {
+    margin: 5rem 2rem;
   }
 }
 @keyframes scaleUp {
