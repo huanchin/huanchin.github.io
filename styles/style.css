@@ -182,19 +182,22 @@ header nav.topbar ul li svg {
     margin: 1rem 5vw;
   }
   .brief h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .brief p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .skill {
     margin: 1rem 5vw;
   }
   .skill h1 {
+    font-size: 1.2rem;
+  }
+  .skill h3 {
     font-size: 1rem;
   }
   .skill p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .skill .skill_logo .front_logo img {
     width: 24;
