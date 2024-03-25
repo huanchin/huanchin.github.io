@@ -115,122 +115,55 @@ header nav.topbar ul li svg {
   filter: blur(5px);
 }
 
-.top {
-  display: flex;
-  justify-content: center;
-}
-.top section.left {
-  display: flex;
-  width: 30vw;
-  justify-content: end;
-  align-items: center;
-  padding-right: 5vw;
-}
-.top section.left img {
-  width: 11vw;
-  min-width: 200px;
-  animation: scaleUp 1s ease;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-}
-.top section.right {
-  width: 62vw;
-  animation: slideDown 1s ease;
-  padding: 3rem 1rem 5rem 1rem;
-}
-.top section.right p {
-  padding: 0rem 0rem 1rem 0rem;
-  font-size: 1.2rem;
-  text-shadow: 0.5px 1.2px 0.2px rgb(177, 177, 177);
-}
-.top section.right p .highlight {
+.bold {
   font-weight: bold;
 }
 
-.section_skill {
+.top {
+  margin-top: 1rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 1rem;
 }
-.section_skill div.skill {
-  margin: 3rem 1.5rem;
+.top img {
+  border-radius: 50%;
+  width: 10vw;
 }
-.section_skill div.skill_logo {
+
+.brief {
+  margin: 1rem 20vw;
+}
+.brief h1 {
+  font-size: 1.3rem;
+  border-bottom: 1px solid black;
+}
+
+.skill {
+  margin: 1rem 20vw 5rem 20vw;
+  display: flex;
+  flex-direction: column;
+}
+.skill h1 {
+  font-size: 1.3rem;
+  border-bottom: 1px solid black;
+}
+.skill .skill_logo {
+  margin: 2rem 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.section_skill div.skill_logo img {
-  margin: 0.5rem;
-}
-
-.section_about {
-  margin: 5rem 14vw;
-}
 
 @media screen and (max-width: 1100px) {
-  .top {
-    flex-direction: column;
-    width: 100%;
+  .top img {
+    width: 28vw;
   }
-  .top section.left {
-    width: 100%;
-    padding-top: 2rem;
-    justify-content: center;
+  .brief {
+    margin: 1rem 15vw;
   }
-  .top section.left img {
-    width: 230px;
-  }
-  .top section.right {
-    width: 100%;
-    padding-top: 3rem;
-    padding-left: 2.5rem;
-  }
-  .section_skill {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 750px) {
-  .top section.left {
-    padding-top: 1rem;
-    flex-basis: 250px;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  .top section.left img {
-    width: 150px;
-  }
-  .top section.right {
-    padding: 3rem 1rem 1rem 1rem;
-    flex-basis: 250px;
-  }
-  .top section.right p {
-    font-size: 0.85rem;
-  }
-  .top section.right a svg {
-    width: 28;
-    height: 28;
-  }
-  .section_skill p {
-    font-size: 0.85rem;
-  }
-  .section_about {
-    margin: 5rem 4rem;
-  }
-  .section_about p {
-    font-size: 0.85rem;
-  }
-}
-@media screen and (max-width: 530px) {
-  .section_skill .skill_logo .back_logo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .section_about {
-    margin: 5rem 2rem;
+  .skill {
+    margin: 1rem 15vw;
   }
 }
 @keyframes scaleUp {
