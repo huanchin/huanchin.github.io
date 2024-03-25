@@ -15,6 +15,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  margin-bottom: 5rem;
 }
 
 // navbar style
@@ -132,6 +133,10 @@ header {
   filter: blur(5px);
 }
 
+.skill_icons {
+  height: 3rem;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -173,27 +178,6 @@ header {
     align-items: center;
   }
 }
-// .section_skill {
-//   //border: 1px solid black;
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: center;
-//   margin-top: 5rem;
-//   div.skill {
-//     //border: 1px solid black;
-//     margin: 0rem 3rem 0rem 3rem;
-//   }
-//   div.skill_logo {
-//     //border: 1px solid black;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     img {
-//       margin: 0.5rem;
-//     }
-//   }
-// }
 
 @media screen and (max-width: 1100px) {
   .top {
@@ -202,66 +186,47 @@ header {
     }
   }
   .brief {
-    margin: 1rem 15vw;
+    margin: 1rem 10vw;
   }
   .skill {
-    margin: 1rem 15vw;
+    margin: 1rem 10vw;
   }
 }
 
-@media screen and (max-width: 750px) {
-  // .top {
-  //   section.left {
-  //     padding-top: 1rem;
-  //     flex-basis: 250px;
-  //     align-items: flex-start;
-  //     justify-content: center;
-  //     img {
-  //       width: 150px;
-  //     }
-  //   }
-  //   section.right {
-  //     padding: 3rem 1rem 1rem 1rem;
-  //     flex-basis: 250px;
-  //     p {
-  //       font-size: 0.85rem;
-  //     }
-  //     a {
-  //       svg {
-  //         width: 28;
-  //         height: 28;
-  //       }
-  //     }
-  //   }
-  // }
-  // .section_skill {
-  //   p {
-  //     font-size: 0.85rem;
-  //   }
-  // }
-  // .section_about {
-  //   margin: 5rem 4rem;
-  //   p {
-  //     font-size: 0.85rem;
-  //   }
-  // }
-}
-
-@media screen and (max-width: 530px) {
-  // .section_skill {
-  //   .skill_logo {
-  //     .back_logo {
-  //       display: flex;
-  //       flex-direction: row;
-  //       flex-wrap: wrap;
-  //       align-items: center;
-  //       justify-content: center;
-  //     }
-  //   }
-  // }
-  // .section_about {
-  //   margin: 5rem 2rem;
-  // }
+@media screen and (max-width: 800px) {
+  .skill_icons {
+    height: 1.8rem;
+  }
+  .top {
+    img {
+      width: 25vw;
+    }
+  }
+  .brief {
+    margin: 1rem 5vw;
+    h1 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.7rem;
+    }
+  }
+  .skill {
+    margin: 1rem 5vw;
+    h1 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.7rem;
+    }
+    .skill_logo {
+      .front_logo {
+        img {
+          width: 24;
+        }
+      }
+    }
+  }
 }
 
 @keyframes scaleUp {

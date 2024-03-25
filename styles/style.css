@@ -14,6 +14,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  margin-bottom: 5rem;
 }
 
 header {
@@ -115,6 +116,10 @@ header nav.topbar ul li svg {
   filter: blur(5px);
 }
 
+.skill_icons {
+  height: 3rem;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -160,10 +165,39 @@ header nav.topbar ul li svg {
     width: 28vw;
   }
   .brief {
-    margin: 1rem 15vw;
+    margin: 1rem 10vw;
   }
   .skill {
-    margin: 1rem 15vw;
+    margin: 1rem 10vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .skill_icons {
+    height: 1.8rem;
+  }
+  .top img {
+    width: 25vw;
+  }
+  .brief {
+    margin: 1rem 5vw;
+  }
+  .brief h1 {
+    font-size: 1rem;
+  }
+  .brief p {
+    font-size: 0.7rem;
+  }
+  .skill {
+    margin: 1rem 5vw;
+  }
+  .skill h1 {
+    font-size: 1rem;
+  }
+  .skill p {
+    font-size: 0.7rem;
+  }
+  .skill .skill_logo .front_logo img {
+    width: 24;
   }
 }
 @keyframes scaleUp {
