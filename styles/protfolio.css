@@ -113,7 +113,7 @@ header nav.topbar ul li svg {
   }
 }
 .portfolio {
-  padding: 5vh 20vw 5vh 20vw;
+  margin: 5vh 20vw 5vh 20vw;
 }
 .portfolio h1 {
   font-size: 1.5rem;
@@ -124,4 +124,24 @@ header nav.topbar ul li svg {
 }
 .portfolio .eCommerce h2 {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .portfolio {
+    margin: 1rem 10vw;
+  }
+  .portfolio h1 {
+    font-size: 1.2rem;
+  }
+  .portfolio .eCommerce h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .portfolio {
+    margin: 1rem 5vw;
+  }
+  .portfolio p {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=protfolio.css.map */
